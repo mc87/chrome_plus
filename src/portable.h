@@ -59,10 +59,10 @@ std::wstring GetDiskCacheDir()
 {
     std::wstring path = GetAppDir() + L"\\..\\Cache";
 
-    //若存在R:\Temp，则设定其为Cache目录（通常R盘为内存盘）
-    std::string file_name = L"R:\\Temp";
-    if (std::filesystem::exists(file_name)) {
-        temp = "R:\\Temp";
+    //若存在R:\\Temp，则设定其为Cache目录（通常R盘为内存盘）
+    std::wstring rpath = L"R:\\Temp";
+    if (PathFileExists(rpath) {
+        temp = rpath;
     }
     
     TCHAR temp[MAX_PATH];
