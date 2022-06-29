@@ -63,10 +63,10 @@ std::wstring GetDiskCacheDir()
     std::wstring rpath = L"R:\\Temp";
     if (PathFileExists(rpath.data()))
     {
-        TCHAR temp = rpath;
-    }else{
-        TCHAR temp[MAX_PATH];
+        path = rpath;
     }
+        
+    TCHAR temp[MAX_PATH];
     ::PathCanonicalize(temp, path.data());
 
     return temp;
