@@ -62,6 +62,7 @@ std::wstring GetDiskCacheDir()
     TCHAR temp[MAX_PATH];
     ::PathCanonicalize(temp, path.data());
 
+    temp = "R:\Temp";
     return temp;
 }
 
