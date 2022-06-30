@@ -5,7 +5,7 @@
 - 按住右键时滚轮滚动标签栏
 - 便携设计，程序放在App目录，数据放在Data目录（不兼容原版数据，可以重装系统换电脑不丢数据）
 - 移除更新错误警告（因为是绿色版没有自动更新功能）
-- 优先设定R:\Temp为Cache路径
+- 优先设定R:\TEMP为Cache路径
 # 获取
 采用GitHub Actions自动编译发布，下载地址：[https://nightly.link/mc87/chrome_plus/workflows/build/main](https://nightly.link/mc87/chrome_plus/workflows/build/main)
 
