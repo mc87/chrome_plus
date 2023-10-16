@@ -9,6 +9,6 @@
 # 获取
 采用GitHub Actions自动编译发布，下载地址：[https://nightly.link/mc87/chrome_plus/workflows/build/main](https://nightly.link/mc87/chrome_plus/workflows/build/main)
 
-[![build status](https://github.com/shuax/chrome_plus/actions/workflows/build.yml/badge.svg)](https://github.com/mc87/chrome_plus/actions/workflows/build.yml)
+[![build status](https://github.com/mc87/chrome_plus/actions/workflows/build.yml/badge.svg)](https://github.com/mc87/chrome_plus/actions/workflows/build.yml)
 # 安装
 dll放入解压版Chrome目录即可
