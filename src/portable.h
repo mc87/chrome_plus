@@ -48,8 +48,14 @@ bool IsNeedPortable()
 
 std::wstring GetUserDataDir()
 {
-    std::wstring path = GetAppDir() + L"\\..\\User Data";
+    std::wstring path = GetAppDir() + L"\\..\\Data";
 
+    //检测现有的User Data目录
+    std::wstring rpath = L"\\..\\User Data";
+    if (PathFileExists(rpath.data()))
+    {
+        path = rpath;
+    }
     TCHAR temp[MAX_PATH];
     ::PathCanonicalize(temp, path.data());
 
