@@ -51,7 +51,7 @@ std::wstring GetUserDataDir()
     std::wstring path = GetAppDir() + L"\\..\\Data";
 
     //检测现有的User Data目录
-    std::wstring rpath = L"\\..\\User Data";
+    std::wstring rpath = GetAppDir() + L"\\..\\User Data";
     if (PathFileExists(rpath.data()))
     {
         path = rpath;
